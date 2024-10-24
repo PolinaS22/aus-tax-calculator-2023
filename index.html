@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TAX Calculator</title>
+      <link rel="icon" href="data:,">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">  
+    </head>
+   <body>
+     <div class="container">
+        <div class="heading background">
+           <h1>Individual income tax calculator, Australia</h1>
+        </div>
+        <div class="box">
+           <form>
+              <div class="containerIncome">
+                 <h3>Type your taxable income for the full income year</h3>
+                 <span>$ <input type="text" id="income" placeholder="Taxable income...">.00</span>
+              </div>
+              <div class="containerResidency">
+                 <div class="heading">
+                    <h3>Select your residency status</h3>
+                 </div>
+                 <div class="containerOption">
+                    <label><input type="radio" name="status" id="resident"> Resident</label>
+                    <label><input type="radio" name="status" id="foreigner"> Foreign resident</label>
+                    <label><input type="radio" name="status" id="workingHoliday"> Working holiday maker</label>
+                 </div>
+              </div>
+              <div class="buttonBox">
+                 <button id="btn">Calculate tax</button>
+              </div>
+           </form>
+           <div class="result">
+              <div class="heading">
+                 <h3>Tax on your income:</h3>
+              </div>
+              <div class="taxValue">
+                 <p class="par">100</p>
+              </div>
+           </div>
+        </div>
+     </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>       
+      <script src="script.js"></script>
+   </body>
+</html>

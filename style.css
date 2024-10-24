@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    background-color: #d4dfdcda;
+}
+.background {
+    background-image: url(https://images.unsplash.com/photo-1647462659133-7126b04b52ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-repeat: repeat;
+    background-position: center;
+}
+.container {
+    background-color: #aed8ccda;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+.heading, .containerIncome, .containerResidency, .buttonBox, .result, .taxValue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.containerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.buttonBox {
+    margin: 30px;
+}
+.containerIncome, .containerResidency {
+    background-color: rgba(156, 194, 169, 0.658);
+    margin: 20px;
+    padding: 20px;
+}
+h1, h3, p {
+    text-align: center;
+    color: rgb(1, 44, 1);
+}
+h1, h3, .containerOption {
+    font-family: 'Roboto', sans-serif;
+}
+input, span, button {
+    font-family: 'Roboto Mono', monospace;
+}
+h1 {
+    background-color: rgba(240, 248, 255, 0.89);
+    width: 99%;
+    padding: 10px;
+    font-size: 50px;
+}
+h3 {
+    font-size: 25px;
+}
+span {
+    background-color: rgba(240, 248, 255, 0.89);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input {
+    font-size: 18px;
+}
+label {
+    font-size: 20px;
+    margin: 10px;
+    background-color: rgba(139, 197, 173, 0.795);
+    width: 300px;
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+button {
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(240, 248, 255, 0.89);  
+}
+.taxValue {
+    width: 300px;
+    height: 150px;
+    background-image: url(https://images.unsplash.com/photo-1647462659133-7126b04b52ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgba(1, 73, 1, 0.705);;
+}
+.par {
+    background-color: rgba(240, 248, 255, 0.815);
+    border-radius: 15px;
+    border: 2px solid rgb(1, 100, 1);
+    font-size: 32px;
+    color: rgb(0, 53, 0);
+    min-width: 150px;
+    height: 60px;
+    padding: 5px;
+    padding-top: 17px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+@media all and (max-width:560px){
+
+h1 {
+    width: 97%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 22px;
+}
+#income {
+    font-size: 14px;
+    width: 150px;
+}
+label {
+    font-size: 18px;
+    width: 240px;
+    
+}
+
+.par {
+    font-size: 28px;
+    min-width: 130px;
+    padding-top: 5px;
+    height: 40px;
+}
+}
